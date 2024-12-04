@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="537.0" prefWidth="600.0" style="-fx-background-color: #1c222b;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bitcoinwalletgenerator.GUIBTCController">
+   <children>
+      <TextArea fx:id="textarea" layoutX="24.0" layoutY="36.0" prefHeight="145.0" prefWidth="552.0" style="-fx-background-color: black;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></TextArea>
+      <Text fill="WHITE" layoutX="24.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Checked:" wrappingWidth="81.220703125">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="checked" fill="WHITE" layoutX="118.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="246.220703125">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="24.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Found:" wrappingWidth="81.220703125">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="found" fill="WHITE" layoutX="118.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="246.220703125">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button layoutX="359.0" layoutY="399.0" mnemonicParsing="false" onAction="#startcheck" prefHeight="37.0" prefWidth="94.0" style="-fx-background-color: green;" text="Start" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="482.0" layoutY="399.0" mnemonicParsing="false" onAction="#stop" prefHeight="37.0" prefWidth="94.0" style="-fx-background-color: red;" text="Stop" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Pane layoutX="24.0" layoutY="400.0" prefHeight="37.0" prefWidth="319.0" style="-fx-border-color: #feb726;">
+         <children>
+            <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="14.0" layoutY="5.0">
+               <image>
+                  <Image url="@Bitcoin.svg.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="Bitcoin" fill="#feb726" layoutX="48.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0.000" wrappingWidth="94.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="Bitcoin1" fill="#feb726" layoutX="144.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bitcoin" wrappingWidth="94.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="24.0" layoutY="440.0" prefHeight="37.0" prefWidth="319.0" style="-fx-border-color: red;">
+         <children>
+            <Text fx:id="Ethereum" fill="RED" layoutX="48.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0.000" wrappingWidth="94.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="Bitcoin11" fill="RED" layoutX="144.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TRX" wrappingWidth="94.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="24.0" fitWidth="44.0" layoutX="2.0" layoutY="5.0">
+               <image>
+                  <Image url="@TRON-Emblem.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="25.0" layoutY="480.0" prefHeight="37.0" prefWidth="319.0" style="-fx-border-color: #355fa3;">
+         <children>
+            <Text fx:id="Litecoin" fill="#355fa3" layoutX="48.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0.000" wrappingWidth="94.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="Bitcoin12" fill="#355fa3" layoutX="144.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Litecoin" wrappingWidth="94.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="12.0" layoutY="6.0">
+               <image>
+                  <Image url="@1200px-LTC-400.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <TextArea fx:id="textarea1" layoutX="24.0" layoutY="226.0" prefHeight="145.0" prefWidth="552.0" style="-fx-background-color: black;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>
